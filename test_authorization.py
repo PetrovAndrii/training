@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from selenium.webdriver.firefox.webdriver import WebDriver
-from selenium.webdriver.common.action_chains import ActionChains
-import time, unittest
+import unittest
 
 def is_alert_present(wd):
     try:
@@ -17,19 +16,32 @@ class test_authorization(unittest.TestCase):
         self.wd.implicitly_wait(60)
 
     def test_authorization(self):
-        success = True
         wd = self.wd
+        self.open_mobile_page(wd)
+        self.login(wd, username="uz.all.test@gmail.com", password="P@ssw0rd")
+        self.logout(wd)
+
+
+    def open_mobile_page(self, wd):
         wd.get("https://booking-test.mdata.com.ua/")
         wd.find_element_by_css_selector(".mobile-version").click()
+
+
+    def login(self, wd, username, password):
         wd.find_element_by_css_selector(".login").click()
         wd.find_element_by_name("email").click()
         wd.find_element_by_name("email").clear()
-        wd.find_element_by_name("email").send_keys("uz.all.test@gmail.com")
+        wd.find_element_by_name("email").send_keys(username)
         wd.find_element_by_name("pwd").click()
         wd.find_element_by_name("pwd").clear()
-        wd.find_element_by_name("pwd").send_keys("P@ssw0rd")
+        wd.find_element_by_name("pwd").send_keys(password)
         wd.find_element_by_name("login").click()
-        self.assertTrue(success)
+
+
+    def logout(self, wd):
+        wd.find_element_by_xpath("/html/body/div[2]/div[1]/span/a").click()
+        wd.find_element_by_css_selector(".logout").click()
+
 
     def tearDown(self):
         self.wd.quit()

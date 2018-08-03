@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57a6fd0-f76e-4333-a14b-701a8a88c532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_authorization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +15,9 @@
     <session id="763175659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -27,6 +28,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="134" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="134" />
         </counts>
       </usages-collector>
     </session>
@@ -40,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/test_authorization.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="e#25#83#0" expanded="true" />
               </folding>
@@ -53,9 +64,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test_authorization.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="31" />
+    <option name="x" value="242" />
+    <option name="y" value="34" />
     <option name="width" value="1482" />
     <option name="height" value="1000" />
   </component>
@@ -79,7 +97,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -93,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_authorization">
+  <component name="RunManager" selected="Python tests.Unittests in test_authorization.py">
     <configuration name="test_authorization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,8 +183,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_authorization" />
         <item itemvalue="Python tests.Unittests in test_authorization.py" />
+        <item itemvalue="Python.test_authorization" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +211,18 @@
     <history-entry file="Unittests_in_test_authorization_py - 2018.08.03 at 14h 05m 22s.xml">
       <configuration name="Unittests in test_authorization.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_authorization_py - 2018.08.03 at 15h 03m 47s.xml">
+      <configuration name="Unittests in test_authorization.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_authorization_py - 2018.08.03 at 15h 34m 00s.xml">
+      <configuration name="Unittests in test_authorization.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_authorization_py - 2018.08.03 at 15h 35m 01s.xml">
+      <configuration name="Unittests in test_authorization.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_authorization_py - 2018.08.03 at 15h 36m 33s.xml">
+      <configuration name="Unittests in test_authorization.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -204,14 +234,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="187" y="16" width="1482" height="1000" extended-state="0" />
+    <frame x="242" y="34" width="1482" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49913943" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913943" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.5008606" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008606" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32871974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -232,7 +263,7 @@
     <entry file="file://$PROJECT_DIR$/test_authorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#25#83#0" expanded="true" />
           </folding>
