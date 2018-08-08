@@ -2,6 +2,7 @@
 
 import pytest
 from application import Application
+from group_stations import Group
 
 
 @pytest.fixture
@@ -14,7 +15,7 @@ def app(request):
 def test_buy_ticket(app):
     app.open_mobile_page()
     app.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
-    app.search_train(from_station="Київ", to_station="Одеса")
+    app.search_train(Group(from_station="Київ", to_station="Одеса"))
     app.choice_train()
     app.choice_types()
     app.choice_plase()

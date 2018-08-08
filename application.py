@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
+from group_stations import Group
 import time
 
 
@@ -48,17 +49,17 @@ class Application:
         wd.switch_to.window(wd.window_handles[0])
 
 
-    def search_train(self, from_station, to_station):
+    def search_train(self, group_stations):
         wd = self.wd
         wd.find_element_by_name("from-title").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").clear()
-        wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(from_station)
+        wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(group_stations.from_station)
         wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(Keys.ENTER)
         wd.find_element_by_name("to-title").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").clear()
-        wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(to_station)
+        wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(group_stations.to_station)
         time.sleep(1)
         wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(Keys.ENTER)
         wd.find_element_by_xpath("/html/body/div[2]/div[3]/form/div[3]/button").click()
@@ -81,14 +82,11 @@ class Application:
         wd = self.wd
         wd.find_element_by_css_selector(".inner-block").click()
         time.sleep(1)
-
         wd.find_element_by_css_selector("#wagons-popup > div:nth-child(1) > a:nth-child(2)").click()
         time.sleep(1)
-
         wd.find_element_by_xpath("/html/body/div[2]/div[6]/div/div[4]/div[2]/div/div/div[12]").click()
         time.sleep(1)
         wd.find_element_by_name("further").click()
-        time.sleep(1)
 
 
     def doc_type_full(self, last_name, first_name):
