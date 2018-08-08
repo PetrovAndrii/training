@@ -5,7 +5,6 @@ from fixture.application import Application
 
 
 
-
 @pytest.fixture
 def app(request):
     fixture = Application()
@@ -15,12 +14,10 @@ def app(request):
 
 
 def test_authorization(app):
-    app.open_mobile_page()
-    app.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
-    app.logout()
+    app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
+    app.session.logout()
 
 
 def test_authorization_google(app):
-    app.open_mobile_page()
-    app.login_google(username="uz.all.test@gmail.com", password="P@ssw0rd!@#")
-    app.logout()
+    app.session.login_google(username="uz.all.test@gmail.com", password="P@ssw0rd!@#")
+    app.session.logout()
