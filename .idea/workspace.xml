@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f57a6fd0-f76e-4333-a14b-701a8a88c532" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_buy_ticket.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_buy_ticket.py" afterDir="false" />
-    </list>
+    <list default="true" id="f57a6fd0-f76e-4333-a14b-701a8a88c532" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,9 +141,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="252" />
-    <option name="y" value="7" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2154" />
+    <option name="y" value="8" />
     <option name="width" value="1482" />
     <option name="height" value="1000" />
   </component>
@@ -332,8 +328,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_authorization.py" />
-        <item itemvalue="Python tests.pytest for test.test_buy_ticket.test_buy_ticket" />
         <item itemvalue="Python tests.pytest in test_buy_ticket.py" />
+        <item itemvalue="Python tests.pytest for test.test_buy_ticket.test_buy_ticket" />
         <item itemvalue="Python.test_authorization" />
         <item itemvalue="Python tests.pytest for test.test_authorization.test_authorization_google" />
       </list>
@@ -394,15 +390,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="252" y="7" width="1482" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="2154" y="8" width="1482" height="1000" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49913943" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913943" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.5008606" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008606" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290993" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39838338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

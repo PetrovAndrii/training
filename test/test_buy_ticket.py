@@ -3,7 +3,6 @@
 import pytest
 from fixture.application import Application
 from model.group_stations import Group
-from fixture.group import GroupHelper
 
 
 @pytest.fixture

@@ -10,12 +10,6 @@ class GroupHelper:
         self.app = app
 
 
-    def open_mobile_page(self):
-        wd = self.app.wd
-        wd.get("https://booking-test.mdata.com.ua/")
-        wd.find_element_by_css_selector(".mobile-version").click()
-
-
     def search_train(self, group_stations):
         wd = self.app.wd
         wd.find_element_by_name("from-title").click()
