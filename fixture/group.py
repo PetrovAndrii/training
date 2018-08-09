@@ -29,23 +29,19 @@ class GroupHelper:
     def choice_train(self):
         wd = self.app.wd
         time.sleep(1)
-        wd.find_elements_by_css_selector("html body div#wrapper div#train-list.js-navigation-page.showed div.train-list.hide-no-place div.train-table div.item")[-1].click()
+        wd.find_elements_by_class_name("item")[-1].click()
         time.sleep(1)
 
 
     def choice_types(self):
         wd = self.app.wd
-        wd.find_elements_by_css_selector("html body div#wrapper div#train-wagons.js-navigation-page.showed div.types div.type")[-1].click()
+        wd.find_elements_by_class_name("type")[-1].click()
         time.sleep(2)
 
 
     def choice_plase(self):
         wd = self.app.wd
-        wd.find_element_by_css_selector(".inner-block").click()
-        time.sleep(1)
-        wd.find_element_by_css_selector("#wagons-popup > div:nth-child(1) > a:nth-child(2)").click()
-        time.sleep(1)
-        wd.find_element_by_xpath("/html/body/div[2]/div[6]/div/div[4]/div[2]/div/div/div[12]").click()
+        wd.find_elements_by_xpath("//div[@original-place]")[-1].click()
         time.sleep(1)
         wd.find_element_by_name("further").click()
 
