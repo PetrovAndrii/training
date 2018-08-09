@@ -9,15 +9,26 @@ class Application:
 
     def __init__(self):
         self.wd = WebDriver()
-        self.wd.implicitly_wait(60)
+        self.wd.implicitly_wait(2)
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
 
+
+    def is_valid(self):
+        try:
+            self.wd.current_url
+            return True
+        except:
+            return False
+
+
     def open_mobile_page(self):
         wd = self.wd
-        wd.get("https://booking-test.mdata.com.ua/")
-        wd.find_element_by_css_selector(".mobile-version").click()
-
+        try:
+            wd.get("https://booking-test.mdata.com.ua/")
+            wd.find_element_by_css_selector(".mobile-version").click()
+        except:
+            return False
 
     def destroy(self):
         self.wd.quit()

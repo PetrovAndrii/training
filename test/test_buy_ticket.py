@@ -1,15 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import pytest
-from fixture.application import Application
+
 from model.group_stations import Group
 
 
-@pytest.fixture
-def app(request):
-    fixture = Application()
-    request.addfinalizer(fixture.destroy)
-    return fixture
 
 
 def test_buy_ticket(app):
