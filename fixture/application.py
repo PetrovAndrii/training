@@ -9,7 +9,7 @@ class Application:
 
     def __init__(self):
         self.wd = WebDriver()
-        self.wd.implicitly_wait(2)
+        self.wd.implicitly_wait(3)
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
 
@@ -24,11 +24,10 @@ class Application:
 
     def open_mobile_page(self):
         wd = self.wd
-        try:
-            wd.get("https://booking-test.mdata.com.ua/")
-            wd.find_element_by_css_selector(".mobile-version").click()
-        except:
-            return False
+        wd.get("https://booking-test.mdata.com.ua/")
+        if (wd.find_elements_by_css_selector(".mobile-version")):
+             wd.find_element_by_css_selector(".mobile-version").click()
+
 
     def destroy(self):
         self.wd.quit()

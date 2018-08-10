@@ -44,7 +44,6 @@ class SessionHelper:
         wd.switch_to.window(wd.window_handles[0])
 
 
-
     def logout(self):
         wd = self.app.wd
         wd.find_element_by_xpath("/html/body/div[2]/div[1]/span/a").click()
