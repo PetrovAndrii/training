@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.common.keys import Keys
 import time
+from random import randint
+
 
 
 
@@ -29,19 +31,25 @@ class GroupHelper:
     def choice_train(self):
         wd = self.app.wd
         time.sleep(1)
-        wd.find_elements_by_class_name("item")[-1].click()
+        links = [link for link in wd.find_elements_by_class_name("item") if link.is_displayed()]
+        l = links[randint(0, len(links)-1)]
+        l.click()
         time.sleep(1)
 
 
     def choice_types(self):
         wd = self.app.wd
-        wd.find_elements_by_class_name("type")[-1].click()
+        links = [link for link in wd.find_elements_by_class_name("type") if link.is_displayed()]
+        l = links[randint(0, len(links)-1)]
+        l.click()
         time.sleep(2)
 
 
     def choice_plase(self):
         wd = self.app.wd
-        wd.find_elements_by_xpath("//div[@original-place]")[-1].click()
+        links = wd.find_elements_by_xpath("//div[@original-place]")
+        l = links[randint(0, len(links)-1)]
+        l.click()
         time.sleep(1)
         wd.find_element_by_name("further").click()
 
