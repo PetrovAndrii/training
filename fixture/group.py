@@ -63,8 +63,17 @@ class GroupHelper:
         wd.find_element_by_name("cart").click()
 
 
-    def doc_type_child(self):
-        pass
+    def doc_type_child(self, last_name, first_name):
+        wd = self.app.wd
+        wd.find_element_by_name("type").click()
+        wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(2)").click()
+        wd.find_element_by_name("child-hover").click()
+        wd.find_element_by_css_selector(".ui-calendar-year-list-table > a:nth-child(10)").click()
+        wd.find_element_by_css_selector(".ui-calendar-month-list-table > a:nth-child(1)").click()
+        wd.find_element_by_xpath("/html/body/div[4]/div/div/table/tbody/tr[2]/td[3]/a").click()
+        self.enter_name(last_name, first_name)
+        time.sleep(1)
+        wd.find_element_by_name("cart").click()
 
 
     def doc_type_student(self):
