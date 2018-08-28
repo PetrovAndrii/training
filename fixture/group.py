@@ -45,6 +45,14 @@ class GroupHelper:
         time.sleep(2)
 
 
+    def choice_vagon(self):
+        wd = self.app.wd
+        wd.find_element_by_css_selector(".inner-block").click()
+        links = wd.find_elements_by_xpath("/html/body/div[5]/div/a")
+        l = links[randint(0, len(links)-1)]
+        l.click()
+        time.sleep(1)
+
     def choice_plase(self):
         wd = self.app.wd
         links = wd.find_elements_by_xpath("//div[@original-place]")

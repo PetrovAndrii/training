@@ -11,6 +11,7 @@ def test_buy_ticket(app):
     app.group.search_train(Group(from_station="Київ", to_station="Одеса"))
     app.group.choice_train()
     app.group.choice_types()
+    app.group.choice_vagon()
     app.group.choice_plase()
     app.group.doc_type_full(last_name="test", first_name="uz")
     app.group.pay(email_pay="uz.all.test@gmail.com")

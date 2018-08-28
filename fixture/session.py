@@ -46,7 +46,6 @@ class SessionHelper:
         wd.find_element_by_name("identifier").send_keys(Keys.ENTER)
         time.sleep(2)
         wd.find_element_by_name("password").click()
-        wd.find_element_by_name("password").click()
         wd.find_element_by_name("password").clear()
         wd.find_element_by_name("password").send_keys(password)
         wd.find_element_by_name("password").send_keys(Keys.ENTER)
