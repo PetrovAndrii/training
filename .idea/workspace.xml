@@ -8,9 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f57a6fd0-f76e-4333-a14b-701a8a88c532" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_buy_ticket.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_buy_ticket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/test/positive_tests/geckodriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/positive_tests/test_authorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_buy_ticket.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,21 +23,23 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="3" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="1" />
-          <entry key="py" value="13" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="13" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,7 +60,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_authorization.py">
+        <entry file="file://$PROJECT_DIR$/test/positive_tests/test_authorization.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
@@ -71,10 +73,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_buy_ticket.py">
+        <entry file="file://$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -83,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="58" />
+              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="37" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
                 <marker date="1533901103917" expanded="true" signature="184:190" ph="..." />
@@ -94,24 +96,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+            <state relative-caret-position="408">
+              <caret line="24" column="95" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="95" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
-                <marker date="1534747118957" expanded="true" signature="1676:1917" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/group_stations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               <folding>
                 <marker date="1533732906877" expanded="true" signature="38:44" ph="..." />
               </folding>
@@ -135,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
+            <state relative-caret-position="696">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
@@ -179,8 +180,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2192" />
-    <option name="y" value="43" />
+    <option name="x" value="320" />
+    <option name="y" value="8" />
     <option name="width" value="1482" />
     <option name="height" value="997" />
   </component>
@@ -214,6 +215,12 @@
               <item name="training" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="positive_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -244,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_buy_ticket.py">
+  <component name="RunManager" selected="Python tests.pytest in test_authorization.py">
     <configuration name="test_authorization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,7 +264,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Auto\training\test\test_authorization.py" />
+      <option name="SCRIPT_NAME" value="C:\Auto\training\test\positive_tests\test_authorization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,7 +303,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test.test_buy_ticket.test_buy_ticket" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test.positive_tests.test_buy_ticket.test_buy_ticket" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,7 +314,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_buy_ticket.test_buy_ticket&quot;" />
+      <option name="_new_target" value="&quot;test.positive_tests.test_buy_ticket.test_buy_ticket&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -337,7 +344,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_authorization.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/positive_tests/test_authorization.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -352,7 +359,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_buy_ticket.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -360,15 +367,15 @@
       <item itemvalue="Python.test_authorization" />
       <item itemvalue="Python tests.pytest in test_authorization.py" />
       <item itemvalue="Python tests.pytest in test_buy_ticket.py" />
-      <item itemvalue="Python tests.pytest for test.test_buy_ticket.test_buy_ticket" />
+      <item itemvalue="Python tests.pytest for test.positive_tests.test_buy_ticket.test_buy_ticket" />
       <item itemvalue="Python tests.pytest in test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_buy_ticket.py" />
         <item itemvalue="Python tests.pytest in test_authorization.py" />
+        <item itemvalue="Python tests.pytest in test_buy_ticket.py" />
         <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest for test.test_buy_ticket.test_buy_ticket" />
+        <item itemvalue="Python tests.pytest for test.positive_tests.test_buy_ticket.test_buy_ticket" />
         <item itemvalue="Python.test_authorization" />
       </list>
     </recent_temporary>
@@ -428,8 +435,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2192" y="43" width="1482" height="997" extended-state="0" />
-    <editor active="true" />
+    <frame x="320" y="8" width="1482" height="997" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913943" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.5008606" side_tool="true" weight="0.25" />
@@ -493,7 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
+        <state relative-caret-position="696">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#24#71#0" expanded="true" />
@@ -504,20 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/group_stations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="23" />
-          <folding>
-            <marker date="1533732906877" expanded="true" signature="38:44" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="58" />
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="37" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
             <marker date="1533901103917" expanded="true" signature="184:190" ph="..." />
@@ -527,7 +523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_authorization.py">
+    <entry file="file://$PROJECT_DIR$/test/positive_tests/test_authorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
@@ -538,20 +534,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_buy_ticket.py">
+    <entry file="file://$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+        <state relative-caret-position="408">
+          <caret line="24" column="95" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="95" />
           <folding>
             <element signature="e#24#71#0" expanded="true" />
-            <marker date="1534747118957" expanded="true" signature="1676:1917" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/positive_tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/group_stations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <marker date="1533732906877" expanded="true" signature="38:44" ph="..." />
           </folding>
         </state>
       </provider>
