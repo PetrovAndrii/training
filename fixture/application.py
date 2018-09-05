@@ -26,7 +26,9 @@ class Application:
         wd = self.wd
         wd.get("https://booking-test.mdata.com.ua/")
         if (wd.find_elements_by_css_selector(".mobile-version")):
-             wd.find_element_by_css_selector(".mobile-version").click()
+            wd.find_element_by_css_selector(".mobile-version").click()
+            wd.execute_script("document.cookie='_uz_emu_on=__on__; path=/; expires=Sun, 01-Jan-2045 00:00:00 GMT'")
+
 
 
     def destroy(self):

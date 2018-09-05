@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f57a6fd0-f76e-4333-a14b-701a8a88c532" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group_stations.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group_stations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +42,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4429" />
+          <entry key="py" value="4442" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4429" />
+          <entry key="Python" value="4442" />
         </counts>
       </usages-collector>
     </session>
@@ -117,13 +113,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="394">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
-                <marker date="1536140629687" expanded="true" signature="184:190" ph="..." />
-                <marker date="1536140629687" expanded="true" signature="382:499" ph="..." />
-                <marker date="1536140629687" expanded="true" signature="859:868" ph="..." />
+                <marker date="1536141279980" expanded="true" signature="184:190" ph="..." />
+                <marker date="1536141279980" expanded="true" signature="382:499" ph="..." />
+                <marker date="1536141279980" expanded="true" signature="795:804" ph="..." />
               </folding>
             </state>
           </provider>
@@ -132,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2397">
-              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+            <state relative-caret-position="37">
+              <caret line="120" column="18" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="18" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
               </folding>
@@ -384,12 +380,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_buy_ticket_test_buy_ticket_full - 2018.09.05 at 10h 38m 26s.xml">
-      <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_buy_ticket_test_buy_ticket_full - 2018.09.05 at 10h 39m 21s.xml">
-      <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_buy_ticket_test_buy_ticket_full - 2018.09.05 at 10h 40m 21s.xml">
       <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
     </history-entry>
@@ -412,6 +402,12 @@
       <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
     </history-entry>
     <history-entry file="pytest_for_test_buy_ticket_test_buy_ticket_full - 2018.09.05 at 12h 43m 39s.xml">
+      <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_buy_ticket_test_buy_ticket_full - 2018.09.05 at 12h 44m 00s.xml">
+      <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_buy_ticket_test_buy_ticket_full - 2018.09.05 at 12h 44m 29s.xml">
       <configuration name="pytest for test_buy_ticket.test_buy_ticket_full" configurationId="tests" />
     </history-entry>
   </component>
@@ -505,6 +501,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="120" column="18" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/positive_tests/test_buy_ticket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -512,16 +518,6 @@
           <folding>
             <marker date="1536140505461" expanded="true" signature="521:1056" ph="..." />
             <marker date="1536140505461" expanded="true" signature="1091:1096" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -551,13 +547,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="394">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
-            <marker date="1536140629687" expanded="true" signature="184:190" ph="..." />
-            <marker date="1536140629687" expanded="true" signature="382:499" ph="..." />
-            <marker date="1536140629687" expanded="true" signature="859:868" ph="..." />
+            <marker date="1536141279980" expanded="true" signature="184:190" ph="..." />
+            <marker date="1536141279980" expanded="true" signature="382:499" ph="..." />
+            <marker date="1536141279980" expanded="true" signature="795:804" ph="..." />
           </folding>
         </state>
       </provider>
