@@ -116,3 +116,28 @@ class GroupHelper:
         wd.find_element_by_name("is_confirmed").click()
         wd.find_element_by_css_selector(".button > button:nth-child(1)").click()
         time.sleep(3)
+
+
+    def enter_card(self):
+        wd = self.app.wd
+        time.sleep(1)
+        wd.find_element_by_name("cnum").click()
+        wd.find_element_by_name("cnum").send_keys("4911")
+        wd.find_element_by_name("cnum").click()
+        wd.find_element_by_name("cnum").send_keys("9900")
+        wd.find_element_by_name("cnum").click()
+        wd.find_element_by_name("cnum").send_keys("9999")
+        wd.find_element_by_name("cnum").click()
+        wd.find_element_by_name("cnum").send_keys("9999")
+        wd.find_element_by_name("expire_month").click()
+        wd.find_element_by_name("expire_month").clear()
+        wd.find_element_by_name("expire_month").send_keys("12")
+        wd.find_element_by_name("expire_year").click()
+        wd.find_element_by_name("expire_year").clear()
+        wd.find_element_by_name("expire_year").send_keys("19")
+        wd.find_element_by_name("cvv[new]").click()
+        wd.find_element_by_name("cvv[new]").clear()
+        wd.find_element_by_name("cvv[new]").send_keys("123")
+        wd.find_element_by_xpath('//*[@id="service_confirm_payment_button"]').click()
+        time.sleep(5)
+

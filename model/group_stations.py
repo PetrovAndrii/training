@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Group:
+class Stations:
 
     def __init__(self, from_station, to_station):
         self.from_station = from_station
