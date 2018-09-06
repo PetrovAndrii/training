@@ -84,8 +84,16 @@ class GroupHelper:
         wd.find_element_by_name("cart").click()
 
 
-    def doc_type_student(self):
-        pass
+    def doc_type_student(self, STUD):
+        wd = self.app.wd
+        wd.find_element_by_name("type").click()
+        wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(3)").click()
+        wd.find_element_by_name("student").click()
+        wd.find_element_by_name("student").clear()
+        wd.find_element_by_name("student").send_keys(STUD)
+        self.enter_name(last_name, first_name)
+        time.sleep(1)
+        wd.find_element_by_name("cart").click()
 
 
     def doc_type_beneficiary_beneficiary(self):

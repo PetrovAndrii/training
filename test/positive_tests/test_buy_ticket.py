@@ -27,7 +27,14 @@ def test_buy_ticket_child(app):
 
 
 def test_buy_ticket_student(app):
-    pass
+    app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
+    app.group.search_train(Stations(from_station="Київ", to_station="Одеса"))
+    app.group.choice_train()
+    app.group.choice_types()
+    app.group.choice_vagon()
+    app.group.choice_plase()
+    app.group.doc_type_student(STUD="ХА11072388", last_name="Коломійцева", first_name="Тетяна")
+    app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_beneficiary(app):
