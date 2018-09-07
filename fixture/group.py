@@ -28,6 +28,12 @@ class GroupHelper:
         wd.find_element_by_xpath("/html/body/div[2]/div[3]/form/div[3]/button").click()
 
 
+    def search_transfer(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//input[@type='button']").click()
+        time.sleep(5)
+
+
     def choice_train(self):
         wd = self.app.wd
         time.sleep(1)
@@ -39,13 +45,14 @@ class GroupHelper:
 
     def choice_types(self):
         wd = self.app.wd
+        time.sleep(1)
         links = [link for link in wd.find_elements_by_class_name("type") if link.is_displayed()]
         l = links[randint(0, len(links)-1)]
         l.click()
         time.sleep(2)
 
 
-    def choice_vagon(self):
+    def choice_wagon(self):
         wd = self.app.wd
         wd.find_element_by_css_selector(".inner-block").click()
         links = wd.find_elements_by_xpath("/html/body/div[5]/div/a")
@@ -62,13 +69,22 @@ class GroupHelper:
         wd.find_element_by_name("further").click()
 
 
+    def add_cart(self):
+        wd = self.app.wd
+        if (wd.find_elements_by_name("cart")):
+            wd.find_element_by_name("cart").click()
+        if (wd.find_elements_by_css_selector(".next-button > button:nth-child(1)")):
+            wd.find_element_by_css_selector(".next-button > button:nth-child(1)").click()
+
+
+
     def doc_type_full(self, last_name, first_name):
         wd = self.app.wd
         wd.find_element_by_name("type").click()
         wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(1)").click()
         self.enter_name(last_name, first_name)
         time.sleep(1)
-        wd.find_element_by_name("cart").click()
+        self.add_cart()
 
 
     def doc_type_child(self, last_name, first_name):
@@ -81,7 +97,7 @@ class GroupHelper:
         wd.find_element_by_xpath("/html/body/div[4]/div/div/table/tbody/tr[2]/td[3]/a").click()
         self.enter_name(last_name, first_name)
         time.sleep(1)
-        wd.find_element_by_name("cart").click()
+        self.add_cart()
 
 
     def doc_type_student(self, STUD):
@@ -92,8 +108,7 @@ class GroupHelper:
         wd.find_element_by_name("student").clear()
         wd.find_element_by_name("student").send_keys(STUD)
         self.enter_name(last_name, first_name)
-        time.sleep(1)
-        wd.find_element_by_name("cart").click()
+        self.add_cart()
 
 
     def doc_type_beneficiary_beneficiary(self):
