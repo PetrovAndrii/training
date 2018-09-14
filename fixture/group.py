@@ -14,6 +14,7 @@ class GroupHelper:
 
     def search_train(self, group_stations):
         wd = self.app.wd
+        wd.find_element_by_css_selector(".logo").click()
         wd.find_element_by_name("from-title").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").clear()
@@ -47,7 +48,7 @@ class GroupHelper:
         wd = self.app.wd
         time.sleep(1)
         links = [link for link in wd.find_elements_by_class_name("type") if link.is_displayed()]
-        l = links[randint(0, len(links)-1)]
+        l = links[randint(0, len(links) - 1)]
         l.click()
         time.sleep(2)
 
@@ -100,7 +101,7 @@ class GroupHelper:
         self.add_cart()
 
 
-    def doc_type_student(self, STUD):
+    def doc_type_student(self, STUD, last_name, first_name):
         wd = self.app.wd
         wd.find_element_by_name("type").click()
         wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(3)").click()
