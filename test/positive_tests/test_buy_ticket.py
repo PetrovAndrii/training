@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-
-
 from model.group_stations import Stations
-import time
+
 
 def test_buy_ticket_full(app):
     app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
