@@ -1,10 +1,18 @@
 # -*- coding: utf-8 -*-
+
 from model.group_stations import Stations
+import pytest
 
 
-def test_buy_ticket_full(app):
+testdata = [
+    Stations(from_station="Київ", to_station="Одеса")
+]
+
+
+@pytest.mark.parametrize("stations", testdata, ids=[repr(x) for x in testdata])
+def test_buy_ticket_full(app, stations):
     app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
-    app.group.search_train(Stations(from_station="Київ", to_station="Одеса"))
+    app.group.search_train(stations)
     app.group.choice_train()
     app.group.choice_types()
     app.group.choice_wagon()
