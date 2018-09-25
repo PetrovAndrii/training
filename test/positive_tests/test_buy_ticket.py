@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from model.group_stations import Stations
+from model.station_22_in_ukr_lang import station_list_22
 import pytest
+import random
 
 
 testdata = [
-    Stations(from_station="Київ", to_station="Одеса")
+    Stations(from_station=random.choice(station_list_22), to_station=random.choice(station_list_22))
 ]
 
 

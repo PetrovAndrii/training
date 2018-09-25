@@ -19,6 +19,7 @@ class GroupHelper:
         wd.find_element_by_css_selector(".ui-autocomplete-input").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").clear()
         wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(group_stations.from_station)
+        time.sleep(1)
         wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(Keys.ENTER)
         wd.find_element_by_name("to-title").click()
         wd.find_element_by_css_selector(".ui-autocomplete-input").click()
