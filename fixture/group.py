@@ -113,11 +113,21 @@ class GroupHelper:
         self.add_cart()
 
 
-    def doc_type_beneficiary_beneficiary(self):
-        pass
+    def doc_type_beneficiary(self, Num, last_name, first_name):
+# какого то хрена поиск по имени, нормальному селектору или хпасу падает, потому что не скролится
+        wd = self.app.wd
+        wd.find_element_by_name("type").click()
+        wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(4)").click()
+        wd.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/div[1]/select/optgroup/option[1]").click()
+        wd.find_element_by_css_selector("div.type-box:nth-child(2) > div:nth-child(2) > input:nth-child(2)").click()
+        time.sleep(1)
+        wd.find_element_by_css_selector("div.type-box:nth-child(2) > div:nth-child(2) > input:nth-child(2)").send_keys(Num)
+        wd.find_element_by_css_selector("div.button:nth-child(4) > button:nth-child(1)").click()
+        self.enter_name(last_name, first_name)
+        self.add_cart()
 
 
-    def doc_type_beneficiary_accompanying(self):
+    def doc_type_accompanying(self):
         pass
 
 
