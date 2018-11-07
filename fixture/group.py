@@ -62,6 +62,13 @@ class GroupHelper:
         l.click()
         time.sleep(1)
 
+
+    def another_informations(self):
+        wd = self.app.wd
+        wd.find_element_by_css_selector(".plus").click()
+        wd.find_element_by_name("further").click()
+
+
     def choice_plase(self):
         wd = self.app.wd
         links = wd.find_elements_by_xpath("//div[@original-place]")

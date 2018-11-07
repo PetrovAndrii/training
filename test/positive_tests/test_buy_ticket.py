@@ -82,9 +82,3 @@ def test_buy_ticket_transfers_full(app):
     app.group.choice_plase()
     app.group.doc_type_full(last_name="test", first_name="uz")
     app.group.pay(email_pay="uz.all.test@gmail.com")
-
-
-
-
-def test_buy_ticket_outside(app):
-    pass
