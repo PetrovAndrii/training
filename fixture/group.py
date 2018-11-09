@@ -28,6 +28,9 @@ class GroupHelper:
         time.sleep(1)
         wd.find_element_by_css_selector(".ui-autocomplete-input").send_keys(Keys.ENTER)
         wd.find_element_by_xpath("/html/body/div[2]/div[3]/form/div[3]/button").click()
+        if wd.find_elements_by_css_selector(".search-error"):
+            while wd.find_elements_by_css_selector(".search-error"):
+                self.search_train(group_stations)
 
 
     def search_transfer(self):
