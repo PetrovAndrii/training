@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.common.keys import Keys
+from model.group_stations import Stations
 import time
 from random import randint
 
@@ -30,7 +31,7 @@ class GroupHelper:
         wd.find_element_by_xpath("/html/body/div[2]/div[3]/form/div[3]/button").click()
         if wd.find_elements_by_css_selector(".search-error"):
             while wd.find_elements_by_css_selector(".search-error"):
-                self.search_train(group_stations)
+                self.search_train(Stations(from_station="Київ", to_station="Одеса"))
 
 
     def search_transfer(self):
@@ -128,8 +129,8 @@ class GroupHelper:
         wd = self.app.wd
         wd.find_element_by_name("type").click()
         wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(4)").click()
-        wd.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/div[1]/select/optgroup/option[1]").click()
-        wd.find_element_by_css_selector("div.type-box:nth-child(2) > div:nth-child(2) > input:nth-child(2)").click()
+        wd.find_element_by_xpath("/html/body/div[5]/div[2]/div/div[2]/div[1]/div[2]/input").click()
+        wd.find_element_by_css_selector("label.item:nth-child(4) > div:nth-child(2)").click()
         time.sleep(1)
         wd.find_element_by_css_selector("div.type-box:nth-child(2) > div:nth-child(2) > input:nth-child(2)").send_keys(Num)
         wd.find_element_by_css_selector("div.button:nth-child(4) > button:nth-child(1)").click()
@@ -137,8 +138,41 @@ class GroupHelper:
         self.add_cart()
 
 
-    def doc_type_accompanying(self):
-        pass
+    def doc_type_beneficiary_out(self, Num, last_name, first_name):
+        # какого то хрена поиск по имени, нормальному селектору или хпасу падает, потому что не скролится
+        wd = self.app.wd
+        wd.find_element_by_name("type").click()
+        wd.find_element_by_name("type").find_element_by_css_selector("option:nth-child(3)").click()
+        wd.find_element_by_xpath("/html/body/div[5]/div[2]/div/div[2]/div[1]/div[2]/input").click()
+        wd.find_element_by_css_selector("label.item:nth-child(4) > div:nth-child(2)").click()
+        time.sleep(1)
+        wd.find_element_by_css_selector("div.type-box:nth-child(2) > div:nth-child(2) > input:nth-child(2)").send_keys(Num)
+        wd.find_element_by_css_selector("div.button:nth-child(4) > button:nth-child(1)").click()
+        self.enter_name(last_name, first_name)
+        self.add_cart()
+
+
+
+    def doc_type_accompanying(self, last_name, first_name):
+        wd = self.app.wd
+        time.sleep(3)
+        wd.find_element_by_css_selector(".buy-convoy").click()
+        self.choice_types()
+        self.choice_plase()
+        time.sleep(3)
+        self.enter_name(last_name, first_name)
+        self.add_cart()
+
+
+    def doc_type_accompanying_out(self, last_name, first_name):
+        wd = self.app.wd
+        time.sleep(3)
+        wd.find_element_by_css_selector(".buy-convoy").click()
+        self.choice_types()
+        self.another_informations()
+        time.sleep(3)
+        self.enter_name(last_name, first_name)
+        self.add_cart()
 
 
     def enter_name(self, last_name, first_name):

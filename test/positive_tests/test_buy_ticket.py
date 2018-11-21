@@ -60,12 +60,20 @@ def test_buy_ticket_beneficiary(app):
     app.group.choice_types()
     app.group.choice_wagon()
     app.group.choice_plase()
-    app.group.doc_type_beneficiary(Num="Є047673", last_name="Сєдов", first_name="Микола")
+    app.group.doc_type_beneficiary(Num="В-І322262", last_name="Колісник", first_name="Наталія")
     app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_accompanying(app):
-    pass
+    app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
+    app.group.search_train(Stations(from_station="Київ", to_station="Одеса"))
+    app.group.choice_train()
+    app.group.choice_types()
+    app.group.choice_wagon()
+    app.group.choice_plase()
+    app.group.doc_type_beneficiary(Num="В-І322262", last_name="Колісник", first_name="Наталія")
+    app.group.doc_type_accompanying(last_name="test", first_name="uz")
+    app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_transfers_full(app):
