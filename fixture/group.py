@@ -88,8 +88,8 @@ class GroupHelper:
             wd.find_element_by_name("cart").click()
         if (wd.find_elements_by_css_selector(".next-button > button:nth-child(1)")):
             wd.find_element_by_css_selector(".next-button > button:nth-child(1)").click()
-
-
+        if wd.find_elements_by_css_selector(".ok"):
+            wd.find_element_by_css_selector(".ok").click()
 
     def doc_type_full(self, last_name, first_name):
         wd = self.app.wd

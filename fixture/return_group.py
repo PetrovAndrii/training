@@ -21,7 +21,7 @@ class ReturnHelper:
         if wd.find_elements_by_css_selector(".ok"):
             while wd.find_elements_by_css_selector(".ok"):
                 wd.find_element_by_css_selector(".ok").click()
-                self.open_actual_tikets()
+                self.app.group.open_actual_tikets()
                 links = wd.find_elements_by_css_selector(".return")
                 l = links[randint(0, len(links) - 1)]
                 l.click()
