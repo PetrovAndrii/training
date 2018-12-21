@@ -220,3 +220,22 @@ class GroupHelper:
         wd.find_element_by_xpath('//*[@id="service_confirm_payment_button"]').click()
         time.sleep(5)
 
+
+    def open_menu(self):
+        wd = self.app.wd
+        self.app.open_mobile_page()
+        wd.find_element_by_class_name("ic-menu").click()
+
+
+    def open_cabinet(self):
+        wd = self.app.wd
+        self.open_menu()
+        wd.find_element_by_css_selector(".slide-menu > a:nth-child(3)").click()
+
+
+    def open_actual_tikets(self):
+        wd = self.app.wd
+        self.open_cabinet()
+        wd.find_element_by_css_selector("#cabinet-menu > a:nth-child(1)").click()
+
+

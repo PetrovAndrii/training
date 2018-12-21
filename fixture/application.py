@@ -2,6 +2,7 @@
 from selenium.webdriver.firefox.webdriver import WebDriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
+from fixture.return_group import ReturnHelper
 
 
 
@@ -12,6 +13,7 @@ class Application:
         self.wd.implicitly_wait(3)
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
+        self.return_group = ReturnHelper(self)
 
 
     def is_valid(self):
