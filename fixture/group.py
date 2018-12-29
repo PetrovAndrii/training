@@ -239,3 +239,32 @@ class GroupHelper:
         wd.find_element_by_css_selector("#cabinet-menu > a:nth-child(1)").click()
 
 
+    def choice_trasportations(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//div[@class='buy-transportation']/a[1]").click()
+        wd.find_element_by_css_selector("div.item").click()
+#        self.select_trans_train()
+        self.select_trans_type()
+        wd.find_element_by_name("submit").click()
+        if wd.find_elements_by_css_selector(".ok"):
+            wd.find_element_by_css_selector(".ok").click()
+
+
+    def select_trans_train(self):
+ #  не работает если всего один билет в кабинете
+        wd = self.app.wd
+        time.sleep(1)
+        links = [link for link in wd.find_elements_by_css_selector(".list") if link.is_displayed()]
+        l = links[randint(0, len(links) - 1)]
+        l.click()
+        time.sleep(1)
+
+
+    def select_trans_type(self):
+        wd = self.app.wd
+        time.sleep(2)
+        wd.find_element_by_css_selector(".place-list").click()
+        links = wd.find_element_by_css_selector(".type").find_elements_by_css_selector("label")
+        l = links[randint(0, len(links) - 1)]
+        l.click()
+
