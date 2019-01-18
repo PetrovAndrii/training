@@ -254,9 +254,12 @@ class GroupHelper:
  #  не работает если всего один билет в кабинете
         wd = self.app.wd
         time.sleep(1)
-        links = [link for link in wd.find_elements_by_css_selector(".list") if link.is_displayed()]
-        l = links[randint(0, len(links) - 1)]
-        l.click()
+        try:
+            links = [link for link in wd.find_elements_by_css_selector(".list") if link.is_displayed()]
+            l = links[randint(0, len(links) - 1)]
+            l.click()
+        except:
+            pass
         time.sleep(1)
 
 
