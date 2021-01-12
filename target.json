@@ -1,7 +1,10 @@
 {
-  "baseUrl":"https://booking-test.mdata.com.ua/",
-  "name": "uz_test",
-  "number": "1",
-  "server": "@yopmail.com"
-
+  "web": {
+      "baseUrl":"https://booking.uz.gov.ua/"
+  },
+  "user": {
+    "name": "uz_test",
+    "number": "1",
+    "server": "@yopmail.com"
+  }
 }

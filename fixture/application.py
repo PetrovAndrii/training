@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
 from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.return_group import ReturnHelper
+from fixture.regist_group import RegistrationHelper
 
 
 
@@ -21,6 +21,7 @@ class Application:
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.return_group = ReturnHelper(self)
+        self.regist_group = RegistrationHelper(self)
         self.base_url = base_url
 
 

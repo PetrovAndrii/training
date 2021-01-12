@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 from model.group_stations import Stations
 import time

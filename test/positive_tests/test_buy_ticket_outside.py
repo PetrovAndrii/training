@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 from model.group_stations import Stations
 from model.station_23_in_ukr_lang import station_list_23
@@ -13,6 +13,7 @@ testdata = [
 
 
 @pytest.mark.parametrize("stations", testdata, ids=[repr(x) for x in testdata])
+"""
 def test_buy_ticket_outside_full(app, stations):
     app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
     app.group.search_train(stations)
@@ -73,3 +74,5 @@ def test_buy_ticket_transfers_full(app):
     app.group.choice_plase()
     app.group.doc_type_full(last_name="test", first_name="uz")
     app.group.pay(email_pay="uz.all.test@gmail.com")
+
+"""

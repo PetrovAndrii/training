@@ -1,18 +1,13 @@
-# -*- coding: utf-8 -*-
+
 
 from model.group_stations import Stations
-from model.station_22_in_ukr_lang import station_list_22
-import pytest
-import random
 
 
-testdata = [
-    Stations(from_station=random.choice(station_list_22), to_station=random.choice(station_list_22))
-]
 
 
-@pytest.mark.parametrize("stations", testdata, ids=[repr(x) for x in testdata])
-def test_buy_ticket_full(app, stations):
+"""
+def test_buy_ticket_full(app, data_groups):
+    stations = data_groups
     app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
     app.group.search_train(stations)
     app.group.choice_train()
@@ -90,3 +85,4 @@ def test_buy_ticket_transfers_full(app):
     app.group.choice_plase()
     app.group.doc_type_full(last_name="test", first_name="uz")
     app.group.pay(email_pay="uz.all.test@gmail.com")
+"""

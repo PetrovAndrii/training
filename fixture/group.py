@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 from selenium.webdriver.common.keys import Keys
 from model.group_stations import Stations
 import time
