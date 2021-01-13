@@ -2,7 +2,7 @@
 import time
 from model.group_stations import Stations
 
-"""
+
 def test_buy_transt_cab(app):
     app.session.login(username="uz_test@yopmail.com", password="P@ssw0rd")
     app.group.open_actual_tikets()
@@ -18,5 +18,4 @@ def test_buy_transt_cab(app):
         app.group.pay(email_pay="uz.all.test@gmail.com")
         app.group.open_actual_tikets()
     app.group.choice_trasportations()
-    app.group.pay(email_pay="uz.all.test@gmail.com")
-"""
+    #   app.group.pay(email_pay="uz.all.test@gmail.com")

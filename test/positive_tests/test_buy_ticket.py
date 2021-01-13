@@ -5,7 +5,7 @@ from model.group_stations import Stations
 
 
 
-"""
+
 def test_buy_ticket_full(app, data_groups):
     stations = data_groups
     app.session.login(username="uz.all.test@gmail.com", password="P@ssw0rd")
@@ -15,7 +15,7 @@ def test_buy_ticket_full(app, data_groups):
     app.group.choice_wagon()
     app.group.choice_plase()
     app.group.doc_type_full(last_name="test", first_name="uz")
-    app.group.pay(email_pay="uz.all.test@gmail.com")
+#    app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_child(app):
@@ -26,7 +26,7 @@ def test_buy_ticket_child(app):
     app.group.choice_wagon()
     app.group.choice_plase()
     app.group.doc_type_child(last_name="test", first_name="uz")
-    app.group.pay(email_pay="uz.all.test@gmail.com")
+#    app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_student(app):
@@ -45,7 +45,7 @@ def test_buy_ticket_student(app):
         app.group.choice_wagon()
         app.group.choice_plase()
         app.group.doc_type_student(STUD="ХА11072388", last_name="Коломійцева", first_name="Тетяна")
-    app.group.pay(email_pay="uz.all.test@gmail.com")
+    #    app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_beneficiary(app):
@@ -56,7 +56,7 @@ def test_buy_ticket_beneficiary(app):
     app.group.choice_wagon()
     app.group.choice_plase()
     app.group.doc_type_beneficiary(Num="В-І322262", last_name="Колісник", first_name="Наталія")
-    app.group.pay(email_pay="uz.all.test@gmail.com")
+    #    app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_accompanying(app):
@@ -68,7 +68,7 @@ def test_buy_ticket_accompanying(app):
     app.group.choice_plase()
     app.group.doc_type_beneficiary(Num="В-І322262", last_name="Колісник", first_name="Наталія")
     app.group.doc_type_accompanying(last_name="test", first_name="uz")
-    app.group.pay(email_pay="uz.all.test@gmail.com")
+    #  app.group.pay(email_pay="uz.all.test@gmail.com")
 
 
 def test_buy_ticket_transfers_full(app):
@@ -84,5 +84,4 @@ def test_buy_ticket_transfers_full(app):
     app.group.choice_wagon()
     app.group.choice_plase()
     app.group.doc_type_full(last_name="test", first_name="uz")
-    app.group.pay(email_pay="uz.all.test@gmail.com")
-"""
+    #   app.group.pay(email_pay="uz.all.test@gmail.com")
